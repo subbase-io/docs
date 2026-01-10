@@ -1,0 +1,288 @@
+---
+title: "Managing Warehouse Inventory"
+description: "Learn how to track stock levels, manage warehouses, and monitor inventory across your organization"
+---
+
+## Overview
+
+SubBase's inventory management helps you track materials stored in warehouses, monitor stock levels, and manage inventory across multiple locations. This is especially useful for companies that:
+
+- Maintain warehouses with commonly used materials
+- Transfer materials between projects
+- Need visibility into available stock before ordering
+
+---
+
+## Key Concepts
+
+### Warehouse
+
+A **Warehouse** is a storage location for inventory. Warehouses can be:
+
+- **Company-wide** – Shared across all projects
+- **Project-specific** – Dedicated to a single project
+
+### Stock
+
+**Stock** represents inventory items in a warehouse. Each stock item tracks:
+
+| Quantity Type | Description |
+|---------------|-------------|
+| **Available** | Ready to be requested and used |
+| **Committed** | Reserved for a request but not yet consumed |
+| **Quality Hold** | Under review or quarantine |
+| **Rejected** | Removed from usable inventory |
+
+### Stock Types
+
+- **Consumable** – Materials that are used up (lumber, concrete, fasteners)
+- **Returnable Asset** – Equipment checked out and returned (tools, scaffolding)
+
+---
+
+## Setting Up Warehouses
+
+### Creating a Warehouse
+
+<Steps>
+  <Step title="Navigate to Inventory">
+    Go to **Inventory** from the main navigation.
+  </Step>
+  <Step title="Click Manage Warehouses">
+    Click **Warehouses** or **Manage Warehouses** to view your warehouse list.
+  </Step>
+  <Step title="Add Warehouse">
+    Click **+ Add Warehouse** to create a new location.
+  </Step>
+  <Step title="Enter Details">
+    - **Name** – A descriptive name (e.g., "Main Warehouse", "Project Alpha Yard")
+    - **Address** – Physical location
+    - **Project** – Leave blank for company-wide, or select a project
+  </Step>
+  <Step title="Save">
+    Click **Save** to create the warehouse.
+  </Step>
+</Steps>
+
+---
+
+## Adding Inventory
+
+### Receiving Stock from Purchase Orders
+
+When materials arrive from a vendor:
+
+1. Go to the delivery in **Orders**
+2. Mark items as received
+3. If the order is for a warehouse, stock is automatically added
+
+### Manual Stock Addition
+
+To add stock manually:
+
+<Steps>
+  <Step title="Go to Warehouse">
+    Navigate to the warehouse where you want to add stock.
+  </Step>
+  <Step title="Click Add Stock">
+    Click **+ Add Stock** or **Receive Materials**.
+  </Step>
+  <Step title="Select Material">
+    Choose the material from your Material Database.
+  </Step>
+  <Step title="Enter Quantity">
+    Enter the quantity being added.
+  </Step>
+  <Step title="Add Details">
+    Include any reference information (lot number, receipt date, etc.).
+  </Step>
+  <Step title="Save">
+    The stock is added to available inventory.
+  </Step>
+</Steps>
+
+---
+
+## Viewing Stock Levels
+
+### Inventory Dashboard
+
+The inventory dashboard shows:
+
+- **Total items** across all warehouses
+- **Low stock alerts** for items below threshold
+- **Recent transactions** (additions, draws, transfers)
+
+### Filtering Inventory
+
+Filter your inventory view by:
+
+- **Warehouse** – View a specific location
+- **Material** – Search for a specific item
+- **Stock Type** – Consumable vs. returnable assets
+- **Status** – Available, committed, on hold
+
+### Stock Details
+
+Click on any stock item to see:
+
+- Current quantities (available, committed, hold, rejected)
+- Transaction history
+- Associated purchase orders
+- Cost information
+
+---
+
+## Stock Transactions
+
+Every inventory change creates a **Stock Transaction** for audit purposes:
+
+| Transaction Type | Description |
+|------------------|-------------|
+| **Receive** | Adding stock from a purchase or manual entry |
+| **Consume** | Using stock for a project (draw down) |
+| **Transfer** | Moving stock between warehouses |
+| **Adjust** | Manual quantity corrections |
+| **Hold** | Placing stock on quality hold |
+| **Reject** | Removing stock from usable inventory |
+
+### Viewing Transaction History
+
+1. Navigate to a specific stock item
+2. Click **Transaction History**
+3. View all movements with dates, quantities, and users
+
+---
+
+## Transferring Inventory
+
+To move stock between warehouses:
+
+<Steps>
+  <Step title="Select Source Warehouse">
+    Go to the warehouse you're transferring from.
+  </Step>
+  <Step title="Select Items">
+    Choose the stock items to transfer.
+  </Step>
+  <Step title="Click Transfer">
+    Click **Transfer** or **Move Stock**.
+  </Step>
+  <Step title="Select Destination">
+    Choose the destination warehouse.
+  </Step>
+  <Step title="Enter Quantities">
+    Specify how much to transfer.
+  </Step>
+  <Step title="Confirm">
+    Review and confirm the transfer.
+  </Step>
+</Steps>
+
+---
+
+## Adjusting Stock
+
+Sometimes you need to correct stock quantities due to:
+
+- Physical count discrepancies
+- Damaged materials
+- Lost or missing items
+
+### Making Adjustments
+
+<Steps>
+  <Step title="Find the Stock Item">
+    Navigate to the item needing adjustment.
+  </Step>
+  <Step title="Click Adjust">
+    Click **Adjust Quantity** or **Stock Adjustment**.
+  </Step>
+  <Step title="Enter New Quantity">
+    Enter the correct quantity or the adjustment amount.
+  </Step>
+  <Step title="Add Reason">
+    Document why the adjustment is needed.
+  </Step>
+  <Step title="Save">
+    The adjustment is recorded with full audit trail.
+  </Step>
+</Steps>
+
+---
+
+## Quality Holds
+
+Place stock on hold when it needs review:
+
+1. Select the stock item
+2. Click **Place on Hold**
+3. Enter the hold reason
+4. The quantity moves from "Available" to "Quality Hold"
+
+To release a hold:
+
+1. Open the stock item
+2. Click **Release Hold**
+3. Stock returns to available
+
+To reject held stock:
+
+1. Open the stock item
+2. Click **Reject**
+3. Stock moves to "Rejected" and is no longer usable
+
+---
+
+## Low Stock Alerts
+
+Set up alerts to know when stock is running low:
+
+<Steps>
+  <Step title="Go to Stock Item">
+    Navigate to the item you want to monitor.
+  </Step>
+  <Step title="Set Threshold">
+    Enter a minimum quantity threshold.
+  </Step>
+  <Step title="Enable Alerts">
+    Turn on low stock notifications.
+  </Step>
+</Steps>
+
+When stock falls below the threshold, assigned users receive notifications.
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Regular Counts" icon="clipboard-check">
+    Perform periodic physical counts to keep inventory accurate.
+  </Card>
+  <Card title="Document Adjustments" icon="pen">
+    Always add reasons when adjusting stock for audit trails.
+  </Card>
+  <Card title="Use Material Database" icon="database">
+    Link stock to your Material Database for consistency.
+  </Card>
+  <Card title="Set Thresholds" icon="bell">
+    Configure low stock alerts to avoid stockouts.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Inventory Requests" icon="hand-holding-box" href="/guides/inventory/inventory-requests">
+  Learn how to request materials from warehouse inventory.
+</Card>
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Order new materials when stock is low.
+</Card>
+
+<Card title="Setting Up Materials" icon="cubes" href="/guides/setup/material-database">
+  Configure your Material Database for inventory tracking.
+</Card>

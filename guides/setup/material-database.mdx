@@ -1,0 +1,314 @@
+---
+title: "Setting Up Your Material Database"
+description: "Learn how to build and maintain your company's material catalog"
+---
+
+## Overview
+
+The **Material Database** (also called the Material Catalog) is your company's master list of materials used for ordering, quoting, and invoice reconciliation. A well-maintained material database:
+
+- Ensures consistent descriptions across orders
+- Enables faster order creation
+- Improves invoice matching accuracy
+- Supports better reporting and analytics
+
+---
+
+## Why Use a Material Database?
+
+| With Material Database | Without |
+|-----------------------|---------|
+| Consistent descriptions | Variations cause confusion |
+| Pre-set units of measure | Manual entry errors |
+| Vendor pricing lookups | Pricing inconsistencies |
+| Automatic invoice matching | Manual reconciliation |
+| Accurate reporting | Fragmented data |
+
+---
+
+## Accessing the Material Database
+
+<Steps>
+  <Step title="Navigate to Settings">
+    Go to **Settings** from the main navigation.
+  </Step>
+  <Step title="Click Materials">
+    Select **Materials** or **Material Database**.
+  </Step>
+</Steps>
+
+You'll see your company's material list with search and filter options.
+
+---
+
+## Adding Materials
+
+### Adding Materials Individually
+
+<Steps>
+  <Step title="Click Add Material">
+    Click **+ Add Material** to create a new entry.
+  </Step>
+  <Step title="Enter Description">
+    Add a clear, descriptive name for the material.
+  </Step>
+  <Step title="Set Unit of Measure">
+    Choose the standard unit (EA, LF, SF, CY, etc.).
+  </Step>
+  <Step title="Add Details (Optional)">
+    - **Manufacturer** – Who makes this material
+    - **Part Number** – Manufacturer's part/SKU
+    - **Default Cost Code** – Standard cost code
+    - **Category** – Material category for organization
+  </Step>
+  <Step title="Save">
+    The material is added to your database.
+  </Step>
+</Steps>
+
+### Bulk Import
+
+For large material lists, use bulk import:
+
+<Steps>
+  <Step title="Download Template">
+    Click **Import** and download the CSV template.
+  </Step>
+  <Step title="Fill Out Template">
+    Add your materials to the spreadsheet.
+  </Step>
+  <Step title="Upload">
+    Upload the completed CSV file.
+  </Step>
+  <Step title="Review and Confirm">
+    Review the import preview and confirm.
+  </Step>
+</Steps>
+
+---
+
+## Material Fields
+
+| Field | Description | Required |
+|-------|-------------|----------|
+| **Description** | Name/description of the material | Yes |
+| **Unit** | Unit of measure | Yes |
+| **Manufacturer** | Product manufacturer | No |
+| **Part Number** | Manufacturer part/SKU | No |
+| **Category** | Organizational category | No |
+| **Default Cost Code** | Standard cost code for this material | No |
+
+---
+
+## Units of Measure
+
+Common units in SubBase:
+
+| Unit | Description |
+|------|-------------|
+| EA | Each (individual items) |
+| LF | Linear Feet |
+| SF | Square Feet |
+| CY | Cubic Yards |
+| TON | Tons |
+| GAL | Gallons |
+| BG | Bags |
+| BX | Boxes |
+| RL | Rolls |
+
+<Tip>
+Set up custom units if your industry uses specialized measurements.
+</Tip>
+
+---
+
+## Organizing with Categories
+
+Categories help organize large material databases:
+
+### Creating Categories
+
+1. Go to **Settings → Material Categories**
+2. Click **+ Add Category**
+3. Enter a category name (e.g., "Lumber", "Electrical", "Plumbing")
+4. Save
+
+### Assigning Categories
+
+When adding or editing materials:
+
+1. Select the **Category** dropdown
+2. Choose the appropriate category
+3. Save
+
+### Filtering by Category
+
+In the material list:
+
+1. Click the **Category** filter
+2. Select one or more categories
+3. View filtered results
+
+---
+
+## Managing Manufacturers
+
+### Adding Manufacturers
+
+1. Go to **Settings → Manufacturers**
+2. Click **+ Add Manufacturer**
+3. Enter the manufacturer name
+4. Save
+
+### Linking to Materials
+
+When editing a material:
+
+1. Select the **Manufacturer** field
+2. Choose from your manufacturer list
+3. Save
+
+---
+
+## Vendor Pricing
+
+Link vendor-specific pricing to materials:
+
+### Adding Vendor Prices
+
+<Steps>
+  <Step title="Open Material">
+    Click on a material to edit it.
+  </Step>
+  <Step title="Go to Pricing Tab">
+    Select the **Vendor Pricing** section.
+  </Step>
+  <Step title="Add Vendor Price">
+    Click **+ Add Price** and select a vendor.
+  </Step>
+  <Step title="Enter Price">
+    Enter the unit price and effective date.
+  </Step>
+  <Step title="Save">
+    The price is linked to this vendor/material combination.
+  </Step>
+</Steps>
+
+### Price Sheets
+
+For bulk vendor pricing updates, use **Price Sheets**:
+
+1. Upload a vendor's price sheet
+2. SubBase matches items to your materials
+3. Review and confirm matches
+4. Prices are updated automatically
+
+See [Managing Vendors & Price Sheets](/guides/setup/vendor-management) for more details.
+
+---
+
+## Searching Materials
+
+### Quick Search
+
+Use the search bar to find materials by:
+
+- Description keywords
+- Part numbers
+- Manufacturer names
+
+### Advanced Filters
+
+Filter your material list by:
+
+- Category
+- Manufacturer
+- Has vendor pricing
+- Recently added
+- Recently used
+
+---
+
+## Editing Materials
+
+<Steps>
+  <Step title="Find the Material">
+    Search or browse to find the material.
+  </Step>
+  <Step title="Click Edit">
+    Click on the material to open the edit view.
+  </Step>
+  <Step title="Make Changes">
+    Update any fields as needed.
+  </Step>
+  <Step title="Save">
+    Changes are saved and apply to future orders.
+  </Step>
+</Steps>
+
+<Warning>
+Editing a material description doesn't change existing orders—only future orders.
+</Warning>
+
+---
+
+## Deactivating Materials
+
+If a material is no longer used:
+
+1. Open the material
+2. Click **Deactivate** or toggle **Active** off
+3. The material won't appear in searches but historical data is preserved
+
+To reactivate:
+
+1. Filter to show inactive materials
+2. Find the material
+3. Toggle **Active** back on
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Be Descriptive" icon="pen">
+    Use clear, complete descriptions that everyone will understand.
+  </Card>
+  <Card title="Standardize Units" icon="ruler">
+    Use consistent units of measure across similar materials.
+  </Card>
+  <Card title="Use Categories" icon="folder-tree">
+    Organize materials into logical categories for easy navigation.
+  </Card>
+  <Card title="Keep Pricing Current" icon="dollar-sign">
+    Update vendor pricing regularly for accurate estimates.
+  </Card>
+</CardGroup>
+
+### Naming Conventions
+
+**Good Examples:**
+- "2x4 SPF Stud - 8ft"
+- "1/2" Type X Drywall - 4x8 Sheet"
+- "3/4" EMT Conduit - 10ft Stick"
+
+**Avoid:**
+- "Wood" (too vague)
+- "Drywall 1/2 type x 4 x 8" (inconsistent format)
+- "ITEM-001" (not descriptive)
+
+---
+
+## Related Guides
+
+<Card title="Managing Vendors" icon="building" href="/guides/setup/vendor-management">
+  Set up vendors and price sheets.
+</Card>
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Use your material database when ordering.
+</Card>
+
+<Card title="Managing Inventory" icon="warehouse" href="/guides/inventory/managing-inventory">
+  Track materials in your warehouses.
+</Card>

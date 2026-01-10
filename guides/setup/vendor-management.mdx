@@ -1,0 +1,310 @@
+---
+title: "Managing Vendors & Price Sheets"
+description: "Learn how to set up vendor relationships and manage pricing"
+---
+
+## Overview
+
+Managing vendors in SubBase involves maintaining your vendor list, setting up contacts, and keeping pricing current with price sheets. Good vendor management helps you:
+
+- Quickly create orders with the right contacts
+- Track vendor performance
+- Maintain accurate pricing for estimates
+- Streamline communication
+
+---
+
+## Vendor Setup
+
+### Adding a New Vendor
+
+<Steps>
+  <Step title="Navigate to Vendors">
+    Go to **Settings → Vendors** or **Vendors** from the main menu.
+  </Step>
+  <Step title="Click Add Vendor">
+    Click **+ Add Vendor** to create a new vendor.
+  </Step>
+  <Step title="Enter Company Information">
+    - **Company Name** – The vendor's business name
+    - **Address** – Business address
+    - **Phone** – Main phone number
+    - **Website** – Vendor's website (optional)
+  </Step>
+  <Step title="Save">
+    The vendor is added to your vendor list.
+  </Step>
+</Steps>
+
+### Vendor Information Fields
+
+| Field | Description |
+|-------|-------------|
+| **Company Name** | Official business name |
+| **Address** | Mailing/billing address |
+| **Phone** | Main contact number |
+| **Email** | General contact email |
+| **Payment Terms** | Default payment terms (Net 30, etc.) |
+| **Tax ID** | Vendor's tax identification |
+| **Notes** | Internal notes about this vendor |
+
+---
+
+## Managing Vendor Contacts
+
+Each vendor can have multiple contacts for different purposes.
+
+### Adding Contacts
+
+<Steps>
+  <Step title="Open Vendor">
+    Click on the vendor to view details.
+  </Step>
+  <Step title="Go to Contacts">
+    Select the **Contacts** tab.
+  </Step>
+  <Step title="Add Contact">
+    Click **+ Add Contact**.
+  </Step>
+  <Step title="Enter Contact Details">
+    - **Name** – Contact person's name
+    - **Email** – Email address (for receiving POs)
+    - **Phone** – Direct phone number
+    - **Role** – Their role (Sales, Accounting, etc.)
+  </Step>
+  <Step title="Save">
+    The contact is added to the vendor.
+  </Step>
+</Steps>
+
+### Contact Types
+
+- **Sales/Orders** – Receives purchase orders
+- **Quotes** – Receives RFQs
+- **Accounting** – For invoice and payment matters
+- **Customer Service** – General inquiries
+
+<Tip>
+Add emails for all contacts who should receive purchase orders. You can select multiple recipients when sending.
+</Tip>
+
+---
+
+## Price Sheets
+
+A **Price Sheet** is a document containing vendor pricing for specific materials. Price sheets help you:
+
+- Keep pricing current
+- Auto-fill prices on orders
+- Compare pricing across vendors
+
+### Price Sheet States
+
+| State | Description |
+|-------|-------------|
+| **Draft** | Being created or imported |
+| **Not Started** | Uploaded but not processed |
+| **Active** | Current and in use |
+| **Expired** | Past the expiration date |
+
+---
+
+## Creating Price Sheets
+
+### Uploading a Vendor Price Sheet
+
+<Steps>
+  <Step title="Go to Vendor">
+    Open the vendor's profile.
+  </Step>
+  <Step title="Click Price Sheets">
+    Navigate to the **Price Sheets** tab.
+  </Step>
+  <Step title="Upload Document">
+    Click **Upload Price Sheet** and select the PDF or Excel file.
+  </Step>
+  <Step title="AI Processing">
+    SubBase extracts pricing from the document automatically.
+  </Step>
+  <Step title="Review Matches">
+    Review how extracted items match to your Material Database.
+  </Step>
+  <Step title="Confirm">
+    Approve the matches and activate the price sheet.
+  </Step>
+</Steps>
+
+### Manual Price Entry
+
+To enter prices manually:
+
+<Steps>
+  <Step title="Create Price Sheet">
+    Click **+ New Price Sheet** on the vendor.
+  </Step>
+  <Step title="Add Items">
+    Click **Add Item** for each material.
+  </Step>
+  <Step title="Select Material">
+    Choose from your Material Database.
+  </Step>
+  <Step title="Enter Price">
+    Enter the unit price.
+  </Step>
+  <Step title="Set Dates">
+    Add effective date and expiration (if applicable).
+  </Step>
+  <Step title="Activate">
+    Click **Activate** to make prices available.
+  </Step>
+</Steps>
+
+---
+
+## Price Sheet Settings
+
+### Effective Dates
+
+- **Start Date** – When prices become active
+- **Expiration Date** – When prices expire (optional)
+
+### Scope
+
+Price sheets can be:
+
+- **Company-wide** – Apply to all projects
+- **Project-specific** – Only for certain projects
+
+### Automatic Updates
+
+When a new price sheet is activated:
+
+- Old prices are superseded
+- New orders use updated pricing
+- Existing orders keep their original prices
+
+---
+
+## Using Vendor Pricing
+
+### On Purchase Orders
+
+When creating an order:
+
+1. Select the vendor
+2. Add materials from your database
+3. Prices auto-fill from active price sheets
+4. Override if needed for specific orders
+
+### Price Comparison
+
+To compare prices across vendors:
+
+1. Go to a material in your database
+2. View the **Vendor Pricing** section
+3. See all vendors with pricing for this item
+4. Compare unit prices
+
+---
+
+## Vendor Performance
+
+Track vendor performance over time:
+
+### Metrics Available
+
+- **On-Time Delivery Rate** – Percentage delivered on schedule
+- **Order Volume** – Total orders and spend
+- **Lead Times** – Average time from order to delivery
+- **Issues** – Problems reported on orders
+
+### Viewing Performance
+
+1. Open a vendor's profile
+2. Go to the **Performance** or **Analytics** tab
+3. View metrics and trends
+
+---
+
+## Vendor Portal Access
+
+Give vendors access to the **Vendor Portal** to:
+
+- View and confirm purchase orders
+- Submit quotes for RFQs
+- Update delivery status
+- Communicate with your team
+
+### Enabling Portal Access
+
+<Steps>
+  <Step title="Open Vendor">
+    Go to the vendor's profile.
+  </Step>
+  <Step title="Vendor Portal Settings">
+    Find the **Portal Access** section.
+  </Step>
+  <Step title="Add Portal Users">
+    Enter email addresses for vendor contacts who should have access.
+  </Step>
+  <Step title="Send Invitations">
+    Click **Send Invite** to email portal access instructions.
+  </Step>
+</Steps>
+
+---
+
+## Organizing Vendors
+
+### Categories/Tags
+
+Organize vendors by:
+
+- Trade (Electrical, Plumbing, Lumber, etc.)
+- Location/Region
+- Preferred status
+- Contract type
+
+### Searching Vendors
+
+Find vendors quickly:
+
+- Search by name
+- Filter by category
+- Filter by active price sheets
+- Filter by recent orders
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Keep Contacts Current" icon="address-book">
+    Update contact info when personnel changes.
+  </Card>
+  <Card title="Regular Price Updates" icon="refresh">
+    Request and upload new price sheets quarterly.
+  </Card>
+  <Card title="Set Expirations" icon="calendar-xmark">
+    Add expiration dates to price sheets so you know when to request updates.
+  </Card>
+  <Card title="Track Performance" icon="chart-line">
+    Monitor vendor delivery performance to inform future decisions.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Create orders to send to your vendors.
+</Card>
+
+<Card title="Request for Quote" icon="file-signature" href="/guides/procurement/request-for-quote">
+  Request pricing from vendors.
+</Card>
+
+<Card title="Vendor Portal Guide" icon="door-open" href="/guides/vendor-portal/vendor-portal-guide">
+  How vendors use the portal.
+</Card>

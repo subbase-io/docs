@@ -28,6 +28,53 @@
               "index",
               "quickstart"
             ]
+          },
+          {
+            "group": "Procurement",
+            "pages": [
+              "guides/procurement/creating-purchase-orders",
+              "guides/procurement/request-for-quote"
+            ]
+          },
+          {
+            "group": "Invoices",
+            "pages": [
+              "guides/invoices/processing-invoices"
+            ]
+          },
+          {
+            "group": "Inventory",
+            "pages": [
+              "guides/inventory/managing-inventory",
+              "guides/inventory/inventory-requests"
+            ]
+          },
+          {
+            "group": "Deliveries",
+            "pages": [
+              "guides/deliveries/tracking-deliveries"
+            ]
+          },
+          {
+            "group": "Commitments",
+            "pages": [
+              "guides/commitments/material-commitments",
+              "guides/commitments/concrete-commitments"
+            ]
+          },
+          {
+            "group": "Setup & Administration",
+            "pages": [
+              "guides/setup/material-database",
+              "guides/setup/vendor-management",
+              "guides/setup/order-flows"
+            ]
+          },
+          {
+            "group": "Vendor Portal",
+            "pages": [
+              "guides/vendor-portal/vendor-portal-guide"
+            ]
           }
         ]
       }

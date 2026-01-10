@@ -1,0 +1,190 @@
+---
+title: "Creating a Purchase Order"
+description: "Learn how to create, manage, and send purchase orders to vendors"
+---
+
+## Overview
+
+A **Purchase Order (PO)** is a formal request sent to a vendor for materials, equipment, or services. Purchase orders are the core of SubBase's procurement workflow—they track what you're ordering, from whom, at what price, and when it should be delivered.
+
+This guide walks you through creating a purchase order from start to finish.
+
+---
+
+## Before You Begin
+
+Make sure you have:
+- Access to the project where you want to create the order
+- The vendor you want to order from added to your company's vendor list
+- Materials set up in your Material Database (optional but recommended)
+
+---
+
+## Step 1: Start a New Order
+
+<Steps>
+  <Step title="Navigate to Orders">
+    From the main navigation, click **Orders** to view your orders list.
+  </Step>
+  <Step title="Click New Order">
+    Click the **+ New Order** button in the top right corner.
+  </Step>
+  <Step title="Select Project">
+    Choose the project this order is for. The project determines which cost codes and delivery addresses are available.
+  </Step>
+  <Step title="Select Vendor">
+    Choose the vendor you're ordering from. If the vendor isn't listed, you'll need to add them first in **Settings → Vendors**.
+  </Step>
+</Steps>
+
+---
+
+## Step 2: Add Line Items
+
+Line items are the materials you're ordering. Each line item includes:
+- **Description** – What you're ordering
+- **Quantity** – How many units
+- **Unit** – The unit of measure (EA, LF, CY, etc.)
+- **Unit Price** – Cost per unit
+- **Cost Code** – The project cost code for accounting
+
+### Adding Materials from Your Database
+
+<Steps>
+  <Step title="Click Add Materials">
+    Click **Add Materials** to open the material selector.
+  </Step>
+  <Step title="Search or Browse">
+    Search for materials by description or browse by category. Select the materials you need.
+  </Step>
+  <Step title="Set Quantities">
+    Enter the quantity for each material. Pricing will auto-fill if you have vendor pricing set up.
+  </Step>
+</Steps>
+
+### Adding Materials Manually
+
+If a material isn't in your database, you can add it directly:
+
+1. Click **Add Line** to create a blank row
+2. Enter the description, quantity, unit, and price
+3. Assign a cost code
+
+<Tip>
+Adding materials to your Material Database ensures consistency across orders and makes invoice reconciliation easier.
+</Tip>
+
+---
+
+## Step 3: Set Delivery Details
+
+Each order can have one or more deliveries. To set up a delivery:
+
+<Steps>
+  <Step title="Set Delivery Date">
+    Enter the requested delivery date. This will be communicated to the vendor.
+  </Step>
+  <Step title="Choose Delivery Address">
+    Select the delivery location—typically your project site or warehouse.
+  </Step>
+  <Step title="Add Delivery Instructions">
+    Include any special instructions (gate codes, contact person, time windows).
+  </Step>
+</Steps>
+
+### Multiple Deliveries
+
+For phased orders, you can split materials across multiple deliveries:
+
+1. Click **Add Delivery** to create additional delivery dates
+2. Assign specific line items to each delivery
+3. Each delivery tracks its own status independently
+
+---
+
+## Step 4: Review and Save
+
+Before sending, review your order:
+
+<Check>Order total is correct</Check>
+<Check>All materials have quantities and prices</Check>
+<Check>Cost codes are assigned</Check>
+<Check>Delivery date and address are set</Check>
+
+Click **Save as Draft** to save without sending, or proceed to send the order.
+
+---
+
+## Step 5: Send to Vendor
+
+When you're ready to place the order:
+
+<Steps>
+  <Step title="Click Send Order">
+    Click the **Send Order** button to open the send dialog.
+  </Step>
+  <Step title="Select Recipients">
+    Choose which vendor contacts should receive the order. You can add email addresses if needed.
+  </Step>
+  <Step title="Add a Message">
+    Include an optional message that will appear in the email to the vendor.
+  </Step>
+  <Step title="Send">
+    Click **Send** to email the purchase order to the vendor.
+  </Step>
+</Steps>
+
+The order status changes to **Ordered** once sent.
+
+---
+
+## Understanding Order States
+
+Your purchase order will move through these states:
+
+| State | Description |
+|-------|-------------|
+| **Draft** | Order created but not yet sent |
+| **Requested** | Internal request awaiting approval |
+| **Approved** | Approved internally, ready to send |
+| **Ordered** | Sent to vendor |
+| **Confirmed** | Vendor has acknowledged the order |
+| **Partially Shipped** | Some deliveries have shipped |
+| **Shipped** | All deliveries have shipped |
+| **Delivered** | All materials received |
+| **Cancelled** | Order cancelled |
+
+---
+
+## Tips for Effective Orders
+
+<CardGroup cols={2}>
+  <Card title="Use Your Material Database" icon="database">
+    Consistent material descriptions make reporting and invoice matching easier.
+  </Card>
+  <Card title="Set Clear Delivery Instructions" icon="truck">
+    Include site contact info and any access requirements.
+  </Card>
+  <Card title="Track Order Numbers" icon="hashtag">
+    SubBase assigns sequential order numbers—reference these in vendor communications.
+  </Card>
+  <Card title="Attach Documents" icon="paperclip">
+    Upload specs, drawings, or terms and conditions as needed.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Request for Quote (RFQ)" icon="file-invoice-dollar" href="/guides/procurement/request-for-quote">
+  Get pricing from vendors before placing an order.
+</Card>
+
+<Card title="Tracking Deliveries" icon="truck" href="/guides/deliveries/tracking-deliveries">
+  Monitor delivery status and receive materials.
+</Card>
+
+<Card title="Processing Invoices" icon="receipt" href="/guides/invoices/processing-invoices">
+  Match vendor invoices to your purchase orders.
+</Card>

@@ -1,0 +1,257 @@
+---
+title: "Tracking Deliveries"
+description: "Learn how to schedule, track, and receive material deliveries"
+---
+
+## Overview
+
+Every purchase order in SubBase includes one or more **Deliveries**. Deliveries track when and where materials should arrive, and help you monitor the fulfillment of your orders from vendor to job site.
+
+---
+
+## Understanding Deliveries
+
+### Delivery vs. Order
+
+- An **Order** is what you're buying (materials, quantities, pricing)
+- A **Delivery** is when and where those materials arrive
+
+A single order can have multiple deliveries for:
+
+- Phased material needs
+- Split shipments from the vendor
+- Different delivery locations
+
+### Delivery States
+
+| State | Description |
+|-------|-------------|
+| **Unscheduled** | No delivery date set yet |
+| **Requested** | Delivery date requested from vendor |
+| **Scheduled** | Vendor confirmed the delivery date |
+| **Shipped** | Materials have left the vendor |
+| **Pending Review** | Delivered but awaiting confirmation |
+| **Delivered** | Materials received and confirmed |
+
+---
+
+## Setting Up Deliveries
+
+When creating a purchase order, you'll set up delivery details:
+
+<Steps>
+  <Step title="Set Delivery Date">
+    Enter your requested delivery date.
+  </Step>
+  <Step title="Choose Location">
+    Select the delivery address (project site, warehouse, etc.).
+  </Step>
+  <Step title="Assign Materials">
+    Specify which line items are included in this delivery.
+  </Step>
+  <Step title="Add Instructions">
+    Include any special delivery instructions.
+  </Step>
+</Steps>
+
+### Adding Multiple Deliveries
+
+For orders with multiple delivery dates:
+
+1. Click **Add Delivery** on the order
+2. Set the date and location
+3. Assign specific line items to each delivery
+4. Each delivery tracks independently
+
+---
+
+## Tracking Delivery Status
+
+### Delivery Dashboard
+
+View all deliveries from the **Deliveries** section:
+
+- **Today's Deliveries** – What's arriving today
+- **Upcoming** – Scheduled for future dates
+- **Past Due** – Deliveries that missed their date
+- **Unscheduled** – Deliveries without dates
+
+### Filtering Deliveries
+
+Filter by:
+
+- **Project** – Deliveries for a specific job
+- **Vendor** – Deliveries from a specific vendor
+- **Status** – Filter by delivery state
+- **Date Range** – Deliveries within a period
+
+---
+
+## Receiving Deliveries
+
+When materials arrive, record the receipt:
+
+<Steps>
+  <Step title="Find the Delivery">
+    Go to **Deliveries** and find the arriving shipment.
+  </Step>
+  <Step title="Click Receive">
+    Click **Receive Delivery** or **Mark as Received**.
+  </Step>
+  <Step title="Verify Quantities">
+    Check off items as they're received. Note any discrepancies.
+  </Step>
+  <Step title="Upload Delivery Ticket">
+    Photograph or upload the signed delivery ticket/BOL.
+  </Step>
+  <Step title="Confirm Receipt">
+    Click **Confirm** to complete the receipt.
+  </Step>
+</Steps>
+
+---
+
+## Delivery Tickets
+
+A **Delivery Ticket** is documentation confirming materials were received. This typically includes:
+
+- Vendor's delivery/packing slip
+- Bill of Lading (BOL)
+- Signed receipt
+- Photos of delivered materials
+
+### Uploading Delivery Tickets
+
+<Steps>
+  <Step title="Open the Delivery">
+    Navigate to the specific delivery.
+  </Step>
+  <Step title="Click Upload">
+    Click **Upload Ticket** or **Attach Documents**.
+  </Step>
+  <Step title="Select Files">
+    Upload photos or PDF documents.
+  </Step>
+  <Step title="Save">
+    Documents are attached to the delivery record.
+  </Step>
+</Steps>
+
+<Tip>
+Delivery tickets are important for invoice reconciliation. Always capture them when materials arrive.
+</Tip>
+
+---
+
+## Handling Delivery Issues
+
+### Partial Deliveries
+
+When only some items arrive:
+
+1. Receive the items that arrived
+2. Mark missing items as **Not Received**
+3. The delivery shows as **Partially Received**
+4. Follow up with vendor on remaining items
+
+### Damaged Materials
+
+When materials arrive damaged:
+
+1. Document the damage with photos
+2. Note the issue when receiving
+3. Mark affected quantities as damaged
+4. Contact vendor for replacement or credit
+
+### Wrong Materials
+
+If incorrect materials arrive:
+
+1. Don't receive them into the system
+2. Document what was received
+3. Contact vendor immediately
+4. Arrange for return and correct shipment
+
+---
+
+## Vendor Communication
+
+### Requesting Delivery Updates
+
+From a delivery record, you can:
+
+1. Click **Request Update**
+2. Send an email to the vendor asking for status
+3. Vendor can respond with shipping information
+
+### Shipping Notifications
+
+Some vendors provide:
+
+- Tracking numbers
+- Estimated arrival times
+- Proof of delivery
+
+These can be recorded on the delivery for reference.
+
+---
+
+## Delivery Calendar
+
+The **Delivery Calendar** provides a visual view of scheduled deliveries:
+
+- **Daily View** – See all deliveries for a specific day
+- **Weekly View** – Plan for the week ahead
+- **Monthly View** – Long-term delivery planning
+
+Use the calendar to:
+
+- Identify scheduling conflicts
+- Ensure adequate receiving capacity
+- Coordinate with site teams
+
+---
+
+## Delivery Reports
+
+Generate reports on delivery performance:
+
+- **On-Time Delivery Rate** – Percentage of deliveries arriving on schedule
+- **Vendor Performance** – Delivery reliability by vendor
+- **Project Deliveries** – All deliveries for a project
+- **Pending Deliveries** – Outstanding deliveries requiring action
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Set Clear Dates" icon="calendar">
+    Always include specific delivery dates on orders.
+  </Card>
+  <Card title="Capture Documentation" icon="camera">
+    Photograph delivery tickets immediately upon receipt.
+  </Card>
+  <Card title="Report Issues Fast" icon="triangle-exclamation">
+    Document and report delivery problems right away.
+  </Card>
+  <Card title="Verify Quantities" icon="check-double">
+    Count materials before signing delivery receipts.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Set up deliveries when creating orders.
+</Card>
+
+<Card title="Processing Invoices" icon="receipt" href="/guides/invoices/processing-invoices">
+  Reconcile invoices against delivery records.
+</Card>
+
+<Card title="Managing Inventory" icon="warehouse" href="/guides/inventory/managing-inventory">
+  Add delivered materials to warehouse inventory.
+</Card>

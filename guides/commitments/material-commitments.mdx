@@ -1,0 +1,269 @@
+---
+title: "Material Commitments"
+description: "Learn how to create and manage long-term material commitments with vendors"
+---
+
+## Overview
+
+A **Material Commitment** is a long-term agreement with a vendor that locks in pricing and quantities for specific materials. Commitments help you:
+
+- Secure pricing for large or ongoing projects
+- Track how much you've ordered against committed amounts
+- Monitor remaining quantities and spend
+- Ensure orders are placed at negotiated rates
+
+---
+
+## When to Use Commitments
+
+| Use Commitments When... | Use Regular Orders When... |
+|------------------------|---------------------------|
+| Long-term material needs | One-time purchases |
+| Negotiated pricing | Standard catalog pricing |
+| Large volume purchases | Small quantities |
+| Need to track against budget | No budget tracking needed |
+| Multiple orders over time | Single order fulfillment |
+
+---
+
+## Understanding Commitment Structure
+
+A Material Commitment tracks:
+
+| Field | Description |
+|-------|-------------|
+| **Vendor** | The supplier providing the materials |
+| **Materials** | List of materials with committed quantities and prices |
+| **Committed Quantity** | Total quantity agreed upon |
+| **Committed Value** | Total dollar amount of the commitment |
+| **Ordered Quantity** | How much has been ordered so far |
+| **Remaining Quantity** | What's left to order |
+
+---
+
+## Step 1: Create a Commitment
+
+<Steps>
+  <Step title="Navigate to Commitments">
+    Go to **Commitments** from the main navigation.
+  </Step>
+  <Step title="Click New Commitment">
+    Click **+ New Commitment** and select **Material Commitment**.
+  </Step>
+  <Step title="Select Project">
+    Choose the project this commitment is for.
+  </Step>
+  <Step title="Select Vendor">
+    Choose the vendor you have the agreement with.
+  </Step>
+  <Step title="Enter Commitment Details">
+    Add a name, reference number, and any notes about the agreement.
+  </Step>
+</Steps>
+
+---
+
+## Step 2: Add Committed Materials
+
+For each material in the agreement:
+
+<Steps>
+  <Step title="Click Add Material">
+    Click **Add Material** to add a line item.
+  </Step>
+  <Step title="Select Material">
+    Choose from your Material Database or add a new description.
+  </Step>
+  <Step title="Enter Committed Quantity">
+    The total quantity covered by this commitment.
+  </Step>
+  <Step title="Enter Unit Price">
+    The negotiated price per unit.
+  </Step>
+  <Step title="Add Cost Code">
+    Assign the appropriate cost code for tracking.
+  </Step>
+</Steps>
+
+Repeat for all materials in the agreement.
+
+<Tip>
+Upload the vendor's quote or contract as an attachment for reference.
+</Tip>
+
+---
+
+## Step 3: Confirm the Commitment
+
+Once all materials are added:
+
+<Steps>
+  <Step title="Review Totals">
+    Verify the total committed quantity and value.
+  </Step>
+  <Step title="Attach Documents">
+    Upload contracts, quotes, or other supporting documents.
+  </Step>
+  <Step title="Confirm">
+    Click **Confirm Commitment** to activate it.
+  </Step>
+</Steps>
+
+The commitment moves from **Drafted** to **Confirmed** status.
+
+---
+
+## Commitment States
+
+| State | Description |
+|-------|-------------|
+| **Drafted** | Being created, not yet active |
+| **Confirmed** | Active and ready for orders |
+| **Partially Delivered** | Some orders have been delivered |
+| **Delivered** | All committed materials ordered and received |
+| **Cancelled** | Commitment terminated |
+
+---
+
+## Ordering from a Commitment
+
+When creating a purchase order, you can link it to a commitment:
+
+<Steps>
+  <Step title="Create New Order">
+    Start a new purchase order for the vendor.
+  </Step>
+  <Step title="Select Commitment">
+    Choose the commitment to order from.
+  </Step>
+  <Step title="Add Materials from Commitment">
+    Click **Add from Commitment** to select materials.
+  </Step>
+  <Step title="Enter Order Quantities">
+    Specify how much you're ordering. Pricing auto-fills from the commitment.
+  </Step>
+  <Step title="Complete Order">
+    Finish and send the order as normal.
+  </Step>
+</Steps>
+
+The commitment automatically tracks the ordered quantities.
+
+---
+
+## Tracking Commitment Progress
+
+### Commitment Dashboard
+
+View all commitments with:
+
+- **Total Committed** – Full value of all commitments
+- **Total Ordered** – How much has been ordered
+- **Remaining** – What's left to order
+
+### Individual Commitment View
+
+Each commitment shows:
+
+- **Material-level progress** – Ordered vs. committed for each item
+- **Visual progress bars** – Quick view of fulfillment status
+- **Linked orders** – All purchase orders tied to this commitment
+- **Remaining quantities** – What can still be ordered
+
+### Color Coding
+
+- 🟢 **Green** – On track, within committed amounts
+- 🟡 **Yellow** – Approaching committed limits
+- 🔴 **Red** – Exceeded committed quantities (over-ordered)
+
+---
+
+## Handling Over-Orders
+
+If you order more than the committed quantity:
+
+1. SubBase flags the overage
+2. You can still place the order if needed
+3. The remaining quantity shows as negative
+4. Consider negotiating additional commitment with vendor
+
+---
+
+## Modifying Commitments
+
+### Adding Materials
+
+If the vendor agreement expands:
+
+1. Open the commitment
+2. Click **Add Material**
+3. Enter the new material and terms
+4. Save changes
+
+### Adjusting Quantities
+
+To modify committed amounts:
+
+1. Open the commitment
+2. Edit the material line
+3. Update the committed quantity
+4. Note the reason for change
+
+### Cancelling a Commitment
+
+If an agreement is terminated:
+
+1. Open the commitment
+2. Click **Cancel Commitment**
+3. Provide a reason
+4. The commitment is archived
+
+<Warning>
+Cancelling doesn't affect orders already placed. Those continue through normal fulfillment.
+</Warning>
+
+---
+
+## Commitment Reports
+
+Generate reports on commitment status:
+
+- **Commitment Summary** – Overview of all active commitments
+- **Utilization Report** – How much of each commitment has been used
+- **Remaining Spend** – Uncommitted amounts by vendor
+- **Expiring Commitments** – Agreements approaching end dates
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Document Everything" icon="file-contract">
+    Attach vendor contracts and quotes to commitments.
+  </Card>
+  <Card title="Monitor Regularly" icon="chart-line">
+    Check commitment progress weekly to avoid surprises.
+  </Card>
+  <Card title="Order from Commitments" icon="link">
+    Always link orders to commitments to track accurately.
+  </Card>
+  <Card title="Plan Ahead" icon="calendar-check">
+    Negotiate new commitments before existing ones are exhausted.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Learn how to create orders linked to commitments.
+</Card>
+
+<Card title="Concrete Commitments" icon="truck-ramp-box" href="/guides/commitments/concrete-commitments">
+  Manage specialized concrete pour commitments.
+</Card>
+
+<Card title="Managing Vendors" icon="building" href="/guides/setup/vendor-management">
+  Set up vendor relationships for commitments.
+</Card>

@@ -1,0 +1,225 @@
+---
+title: "Inventory Requests"
+description: "Learn how to request materials from warehouse inventory instead of ordering from vendors"
+---
+
+## Overview
+
+An **Inventory Request** allows field workers to draw materials from existing warehouse stock rather than creating a new purchase order. This is ideal when you have materials in inventory that can fulfill project needs.
+
+---
+
+## When to Use Inventory Requests
+
+| Use Inventory Request When... | Use Purchase Order When... |
+|------------------------------|---------------------------|
+| Materials are in stock | Stock is unavailable |
+| Faster fulfillment needed | New materials required |
+| Using company-owned materials | Ordering from vendors |
+| Transferring between projects | Replenishing inventory |
+
+---
+
+## Step 1: Check Stock Availability
+
+Before creating a request, verify materials are available:
+
+<Steps>
+  <Step title="Go to Inventory">
+    Navigate to **Inventory** from the main menu.
+  </Step>
+  <Step title="Search for Material">
+    Search for the material you need.
+  </Step>
+  <Step title="Check Available Quantity">
+    Verify there's enough available stock to fulfill your need.
+  </Step>
+</Steps>
+
+<Tip>
+Stock marked as "Available" can be requested. "Committed" stock is already reserved for other requests.
+</Tip>
+
+---
+
+## Step 2: Create an Inventory Request
+
+<Steps>
+  <Step title="Click New Request">
+    From **Inventory** or **Requests**, click **+ New Inventory Request**.
+  </Step>
+  <Step title="Select Project">
+    Choose the project that needs the materials.
+  </Step>
+  <Step title="Select Warehouse">
+    Choose the warehouse to draw from.
+  </Step>
+  <Step title="Add Materials">
+    Select the materials you need and enter quantities.
+  </Step>
+  <Step title="Set Pickup/Delivery Details">
+    Specify whether materials will be picked up or delivered, and when.
+  </Step>
+  <Step title="Submit">
+    Click **Submit Request** for review.
+  </Step>
+</Steps>
+
+---
+
+## Step 3: Request Approval
+
+After submission, the request goes through your approval workflow:
+
+### Inventory Request States
+
+| State | Description |
+|-------|-------------|
+| **Draft** | Request being created, not yet submitted |
+| **Unreviewed** | Submitted and awaiting review |
+| **Approved** | Request approved, ready for fulfillment |
+| **Prepare Materials** | Warehouse is preparing the order |
+| **Ready for Pickup** | Materials staged and ready |
+| **Delivered** | Materials received at destination |
+| **Rejected/Cancelled** | Request denied or cancelled |
+
+### For Requesters
+
+After submitting, you'll receive notifications as your request progresses:
+
+- When approved or rejected
+- When materials are ready for pickup
+- When materials are marked as delivered
+
+### For Approvers
+
+To review requests:
+
+1. Go to **Inventory Requests** or your task list
+2. Open the pending request
+3. Verify stock availability and request details
+4. Click **Approve** or **Reject**
+
+---
+
+## Step 4: Warehouse Fulfillment
+
+Once approved, the warehouse team fulfills the request:
+
+<Steps>
+  <Step title="View Approved Requests">
+    Warehouse staff see approved requests in their queue.
+  </Step>
+  <Step title="Prepare Materials">
+    Click **Start Preparation** to begin picking materials.
+  </Step>
+  <Step title="Pick and Stage">
+    Gather the materials and stage them for pickup.
+  </Step>
+  <Step title="Mark Ready">
+    Click **Ready for Pickup** when materials are staged.
+  </Step>
+</Steps>
+
+---
+
+## Step 5: Pickup or Delivery
+
+### Pickup
+
+1. Requester is notified materials are ready
+2. Requester goes to warehouse
+3. Warehouse confirms pickup
+4. Request is marked **Delivered**
+
+### Delivery
+
+1. Warehouse arranges delivery to job site
+2. Materials are transported
+3. Recipient confirms receipt
+4. Request is marked **Delivered**
+
+---
+
+## What Happens to Stock?
+
+When an inventory request is processed:
+
+| Stage | Stock Impact |
+|-------|--------------|
+| Request submitted | No change |
+| Request approved | Quantity moves from "Available" to "Committed" |
+| Materials delivered | Quantity is consumed (removed from inventory) |
+| Request cancelled | Committed quantity returns to "Available" |
+
+---
+
+## Tracking Your Requests
+
+### Viewing Request Status
+
+1. Go to **Inventory Requests**
+2. Use filters to find your requests
+3. Click on a request to see details and history
+
+### Request History
+
+Each request shows:
+
+- Who created it and when
+- Approval/rejection history
+- Fulfillment timeline
+- Any notes or comments
+
+---
+
+## Handling Issues
+
+### Partial Fulfillment
+
+If the warehouse can't fulfill the complete request:
+
+1. Warehouse marks partial quantities as ready
+2. Requester is notified of the shortage
+3. Remaining quantities can be:
+   - Fulfilled later when stock arrives
+   - Cancelled and ordered from vendor
+
+### Stock Discrepancies
+
+If stock isn't actually available:
+
+1. Warehouse flags the issue
+2. Request may be partially fulfilled or rejected
+3. Inventory is adjusted to reflect actual counts
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Check Stock First" icon="magnifying-glass">
+    Verify availability before submitting requests to avoid delays.
+  </Card>
+  <Card title="Plan Ahead" icon="calendar">
+    Submit requests with enough lead time for fulfillment.
+  </Card>
+  <Card title="Clear Details" icon="clipboard-list">
+    Include pickup times and contact info for smooth handoff.
+  </Card>
+  <Card title="Confirm Receipt" icon="check">
+    Always confirm delivery to update inventory accurately.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Managing Inventory" icon="warehouse" href="/guides/inventory/managing-inventory">
+  Learn how to track and manage warehouse stock.
+</Card>
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Order new materials when inventory isn't available.
+</Card>

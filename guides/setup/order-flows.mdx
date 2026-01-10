@@ -1,0 +1,324 @@
+---
+title: "Configuring Order Flows"
+description: "Learn how to set up approval workflows and custom order states"
+---
+
+## Overview
+
+**Order Flows** in SubBase allow you to customize how orders move through your approval process. You can configure:
+
+- Required approvals based on order value
+- Custom workflow states
+- Automatic routing rules
+- Notifications at each stage
+
+---
+
+## Understanding Order Flows
+
+### Default Flow
+
+Out of the box, orders follow this basic flow:
+
+```
+Draft → Ordered → Delivered
+```
+
+### Custom Flows
+
+With custom flows, you can add stages like:
+
+```
+Draft → Pending Approval → Approved → Ordered → Delivered
+```
+
+Or even more complex:
+
+```
+Draft → Team Lead Review → Manager Approval → Finance Review → Approved → Ordered
+```
+
+---
+
+## Setting Up Order Flows
+
+### Accessing Flow Settings
+
+<Steps>
+  <Step title="Go to Settings">
+    Navigate to **Settings** from the main menu.
+  </Step>
+  <Step title="Click Order Flows">
+    Select **Order Flows** or **Workflow Settings**.
+  </Step>
+</Steps>
+
+### Creating a Flow
+
+<Steps>
+  <Step title="Click New Flow">
+    Click **+ New Order Flow**.
+  </Step>
+  <Step title="Name the Flow">
+    Give it a descriptive name (e.g., "Standard Approval", "Large Order Flow").
+  </Step>
+  <Step title="Add Stages">
+    Define the stages orders will go through.
+  </Step>
+  <Step title="Set Conditions">
+    Define when this flow applies (by amount, project, etc.).
+  </Step>
+  <Step title="Save">
+    Activate the flow.
+  </Step>
+</Steps>
+
+---
+
+## Flow Stages
+
+### Common Stage Types
+
+| Stage | Purpose |
+|-------|---------|
+| **Draft** | Initial creation |
+| **Pending Approval** | Awaiting review |
+| **Approved** | Ready to send |
+| **Ordered** | Sent to vendor |
+| **Confirmed** | Vendor acknowledged |
+| **Delivered** | Complete |
+| **Rejected** | Not approved |
+
+### Custom Stages
+
+Create custom stages for your process:
+
+1. Click **Add Stage**
+2. Name the stage
+3. Set who can approve
+4. Configure notifications
+5. Define the next stage
+
+---
+
+## Approval Rules
+
+### Amount-Based Approvals
+
+Configure approvals based on order value:
+
+<Steps>
+  <Step title="Set Threshold">
+    Define the dollar amount that triggers approval.
+  </Step>
+  <Step title="Assign Approvers">
+    Select who can approve orders at this level.
+  </Step>
+  <Step title="Add Tiers">
+    Create multiple tiers for different amounts.
+  </Step>
+</Steps>
+
+**Example:**
+
+| Order Amount | Required Approval |
+|-------------|-------------------|
+| Under $1,000 | No approval needed |
+| $1,000 - $10,000 | Project Manager |
+| $10,000 - $50,000 | Director |
+| Over $50,000 | VP + Director |
+
+### Role-Based Approvals
+
+Assign approval rights by role:
+
+- **Field Users** – Can create drafts only
+- **Project Managers** – Can approve up to threshold
+- **Directors** – Can approve higher amounts
+- **Admins** – Can approve all orders
+
+---
+
+## Configuring Approvers
+
+### Assigning Approvers
+
+For each approval stage:
+
+1. Select **Approvers** setting
+2. Choose how approvers are assigned:
+   - **Specific Users** – Named individuals
+   - **Roles** – Anyone with the role
+   - **Project Managers** – Assigned PM for the project
+   - **Requester's Manager** – Organizational hierarchy
+
+### Multiple Approvers
+
+Configure multi-person approval:
+
+- **Any One** – First approver clears the stage
+- **All Required** – Everyone must approve
+- **Sequential** – Approvers in order
+
+---
+
+## Notifications
+
+### Automatic Notifications
+
+Configure who gets notified and when:
+
+| Event | Who to Notify |
+|-------|--------------|
+| Order needs approval | Assigned approvers |
+| Order approved | Requester |
+| Order rejected | Requester |
+| Order sent | Vendor contacts |
+| Order delivered | Assignee |
+
+### Setting Up Notifications
+
+<Steps>
+  <Step title="Open Stage Settings">
+    Edit the stage in your flow.
+  </Step>
+  <Step title="Configure Notifications">
+    Select events and recipients.
+  </Step>
+  <Step title="Customize Message">
+    Optionally customize the notification text.
+  </Step>
+  <Step title="Save">
+    Notifications are active.
+  </Step>
+</Steps>
+
+---
+
+## Assignees and Watchers
+
+### Assignees
+
+The **Assignee** is responsible for the current action:
+
+- On draft: The person creating the order
+- Pending approval: The approver
+- Ordered: The person managing the order
+
+### Watchers
+
+**Watchers** receive notifications but don't have action items:
+
+- Add watchers to keep stakeholders informed
+- Watchers can be added by anyone on the order
+- Watchers can add comments
+
+---
+
+## Flow Conditions
+
+### Applying Flows by Criteria
+
+Set conditions for when a flow applies:
+
+| Condition | Example |
+|-----------|---------|
+| **Order Amount** | Over $5,000 |
+| **Project** | Specific projects |
+| **Vendor** | Certain vendors |
+| **Category** | Material categories |
+| **User** | Who created the order |
+
+### Multiple Flows
+
+You can have multiple flows with different conditions. SubBase applies the most specific matching flow.
+
+---
+
+## Invoice Flows
+
+Similar flows can be configured for invoices:
+
+```
+Received → Reconciliation → Review → Approved → Posted
+```
+
+### Invoice-Specific Settings
+
+- Reconciliation requirements
+- Approval thresholds
+- ERP posting rules
+
+---
+
+## Testing Flows
+
+Before activating a new flow:
+
+<Steps>
+  <Step title="Create Test Order">
+    Create a draft order that matches flow conditions.
+  </Step>
+  <Step title="Submit for Approval">
+    Move through the workflow.
+  </Step>
+  <Step title="Verify Notifications">
+    Confirm the right people are notified.
+  </Step>
+  <Step title="Check Transitions">
+    Ensure stages transition correctly.
+  </Step>
+</Steps>
+
+---
+
+## Managing Existing Flows
+
+### Editing Flows
+
+1. Open the flow in settings
+2. Make changes to stages or rules
+3. Save
+
+<Warning>
+Changes affect new orders only. In-progress orders continue with the flow they started on.
+</Warning>
+
+### Deactivating Flows
+
+To disable a flow:
+
+1. Open flow settings
+2. Toggle **Active** off
+3. Select a replacement flow if needed
+
+---
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Keep It Simple" icon="minimize">
+    Don't over-complicate flows. More stages mean slower processing.
+  </Card>
+  <Card title="Clear Thresholds" icon="dollar-sign">
+    Set approval amounts that match your company policy.
+  </Card>
+  <Card title="Test First" icon="flask">
+    Test new flows before making them the default.
+  </Card>
+  <Card title="Document Policies" icon="file-lines">
+    Keep your approval policies documented outside SubBase too.
+  </Card>
+</CardGroup>
+
+---
+
+## Related Guides
+
+<Card title="Creating Purchase Orders" icon="file-invoice-dollar" href="/guides/procurement/creating-purchase-orders">
+  Create orders that flow through your workflows.
+</Card>
+
+<Card title="Processing Invoices" icon="receipt" href="/guides/invoices/processing-invoices">
+  Configure invoice approval flows.
+</Card>
