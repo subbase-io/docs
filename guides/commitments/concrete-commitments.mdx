@@ -185,6 +185,29 @@ Track actual delivery:
 3. Track any issues or delays
 4. Capture delivery ticket photos
 
+### Logging Mix Data
+
+Use the **Log Table** to record mix data during and after the pour:
+
+<Steps>
+  <Step title="Open the Log Table">
+    Navigate to the pour and open the logging view.
+  </Step>
+  <Step title="Edit Fields Inline">
+    Click on any editable field (pour date, mix code, location, quantities) to edit directly in the table. Changes are validated in real-time.
+  </Step>
+  <Step title="Review Variance">
+    As you enter actual quantities, the variance column updates automatically to show differences from planned amounts.
+  </Step>
+  <Step title="Save Changes">
+    Click **Save** to persist your edits.
+  </Step>
+</Steps>
+
+<Tip>
+The Log Table supports inline editing for faster data entry. Fields are validated as you type, and variance calculations update immediately.
+</Tip>
+
 ### Completing the Pour
 
 After the pour:
@@ -203,6 +226,107 @@ After the pour:
     Set the pour status to **Completed**.
   </Step>
 </Steps>
+
+---
+
+## Managing Delivery Tickets
+
+Delivery tickets from concrete vendors are essential documentation for reconciliation and invoicing.
+
+### Adding Tickets
+
+<Steps>
+  <Step title="Open the Pour">
+    Navigate to the pour where you want to add tickets.
+  </Step>
+  <Step title="Click Add Ticket">
+    Click **Add Ticket** to open the ticket form.
+  </Step>
+  <Step title="Enter Ticket Details">
+    Fill in the ticket number, quantities, and other relevant information.
+  </Step>
+  <Step title="Attach Files">
+    Upload photos or scans of the physical delivery ticket. Multiple file attachments are supported.
+  </Step>
+  <Step title="Submit">
+    Click **Submit** to save the ticket.
+  </Step>
+</Steps>
+
+### Viewing Ticket List
+
+All tickets for a pour are displayed in the **Ticket List**:
+
+- View ticket numbers, quantities, and status at a glance
+- Click any ticket to view full details and attachments
+- Filter tickets by status or date
+
+### Ticket Files
+
+Each ticket can have multiple file attachments:
+
+- Delivery ticket photos
+- Bills of lading
+- Signed receipts
+- Quality documentation
+
+Click **View Files** on any ticket to see all attached documents.
+
+---
+
+## Mix Log History
+
+SubBase maintains a complete audit trail for all mix log changes:
+
+### Viewing History
+
+<Steps>
+  <Step title="Open the Mix Log">
+    Navigate to the pour and select a mix log entry.
+  </Step>
+  <Step title="Click History Tab">
+    Open the **History** tab to view the audit trail.
+  </Step>
+  <Step title="Review Changes">
+    See all changes made to the mix log, including:
+    - Who made each change
+    - When the change occurred
+    - What values were modified (before and after)
+    - Nested ticket and attachment changes
+  </Step>
+</Steps>
+
+The history tab provides full visibility into all modifications for compliance and troubleshooting.
+
+---
+
+## Exporting Data
+
+Export your concrete commitment data for reporting and analysis:
+
+### Export to Excel
+
+<Steps>
+  <Step title="Navigate to Log Table">
+    Go to the pour log table you want to export.
+  </Step>
+  <Step title="Set Date Range">
+    Use the date range filter to select the period you want to export.
+  </Step>
+  <Step title="Click Export">
+    Click **Export to Excel** in the toolbar.
+  </Step>
+  <Step title="Download File">
+    An XLSX file downloads with all log data for the selected period.
+  </Step>
+</Steps>
+
+Exported data includes:
+- Pour dates and locations
+- Mix codes and designs
+- Planned vs. actual quantities
+- Variance calculations
+- Ticket information
 
 ---
 
@@ -289,10 +413,16 @@ Track commitment usage:
     Monitor forecasts and have backup plans.
   </Card>
   <Card title="Capture Tickets" icon="receipt">
-    Photograph delivery tickets immediately.
+    Photograph and upload delivery tickets immediately using the ticket form.
   </Card>
   <Card title="Communicate Changes" icon="comments">
     Notify vendors promptly of any schedule changes.
+  </Card>
+  <Card title="Log Data Promptly" icon="edit">
+    Use inline editing to record actual quantities during or immediately after the pour.
+  </Card>
+  <Card title="Export for Reports" icon="file-export">
+    Export data regularly for project reporting and cost analysis.
   </Card>
 </CardGroup>
 

@@ -144,15 +144,20 @@ Your purchase order will move through these states:
 
 | State | Description |
 |-------|-------------|
-| **Draft** | Order created but not yet sent |
-| **Requested** | Internal request awaiting approval |
-| **Approved** | Approved internally, ready to send |
-| **Ordered** | Sent to vendor |
-| **Confirmed** | Vendor has acknowledged the order |
+| **Unreviewed** | Order received but not yet reviewed |
+| **Order Created** | Order has been created and is being prepared |
+| **Awaiting Approval** | Order submitted for internal approval |
+| **Order Placed** | Order sent to vendor |
+| **Order Confirmed** | Vendor has acknowledged the order |
 | **Partially Shipped** | Some deliveries have shipped |
 | **Shipped** | All deliveries have shipped |
 | **Delivered** | All materials received |
+| **Cancellation Requested** | Cancellation has been requested |
 | **Cancelled** | Order cancelled |
+
+<Tip>
+Your company can customize order states and approval workflows in **Settings → Order Flows**. The states above are the default workflow.
+</Tip>
 
 ---
 
