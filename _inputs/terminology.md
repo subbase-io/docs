@@ -145,9 +145,11 @@ at agreed pricing and quantities.
 - **Delivered** – All materials received
 - **Cancelled** – Order cancelled
 
+Exception: if **Create orders from vendor emails** is on, an order created from a vendor email reaches Ordered and Confirmed from the vendor's confirmation and is not sent.
+
 ### Order Number
 A unique identifier assigned to each purchase order. Order numbers are
-sequential within a project and company.
+sequential within a project and company. If **Create orders from vendor emails** is on, an order created from a vendor email carries the vendor's own order number instead.
 
 ### Line Item (Order Material)
 A single material entry on a purchase order, including:
@@ -455,6 +457,8 @@ Use the following state names exactly as written in documentation:
 - **Shipped** – All deliveries shipped
 - **Delivered** – All materials received
 - **Cancelled** – Order cancelled
+
+Exception: if **Create orders from vendor emails** is on, an order created from a vendor email reaches Ordered and Confirmed from the vendor's confirmation and is not sent.
 
 ### Invoice States
 - **Unreviewed** – Awaiting review

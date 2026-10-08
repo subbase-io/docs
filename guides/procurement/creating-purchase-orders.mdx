@@ -134,7 +134,7 @@ When you're ready to place the order:
   </Step>
 </Steps>
 
-The order status changes to **Ordered** once sent.
+The order status changes to **Ordered** once sent. Orders created from a vendor email start at **Confirmed** instead; see [Orders Created from Vendor Emails](#orders-created-from-vendor-emails).
 
 ---
 
@@ -154,6 +154,23 @@ Your purchase order will move through these states:
 | **Delivered** | All materials received |
 | **Cancelled** | Order cancelled |
 
+If **Create orders from vendor emails** is on, an order created from a vendor email (see below) reaches **Ordered** and **Confirmed** from the vendor's confirmation; SubBase does not send it.
+
+---
+
+## Orders Created from Vendor Emails
+
+<Note>
+This applies only if your company has turned on **Create orders from vendor emails** (**Settings → Other Settings**). It is off by default. If you have not turned it on, every order follows the steps above.
+</Note>
+
+With the setting on and a default project chosen, when a vendor's order confirmation email does not match any order in SubBase, SubBase creates the purchase order from that email, under that project. These orders differ from orders you create in SubBase in two ways:
+
+- **They carry the vendor's order number.** The order number is the number the vendor printed on their confirmation, not a sequential SubBase number. The PO number stated on the vendor's email is kept in the order name.
+- **They are already Ordered and Confirmed.** The vendor's confirmation is the evidence the order was placed, so the order starts at **Confirmed**. SubBase does not send the order back to the vendor — they already have it, and re-sending it could be mistaken for a second order.
+
+You can tell these orders apart: the order page shows **Created from \{Vendor\} email** with the date and a link to the email, and the orders list marks them with a mail icon labelled **Created from a vendor email**.
+
 ---
 
 ## Tips for Effective Orders
@@ -166,7 +183,7 @@ Your purchase order will move through these states:
     Include site contact info and any access requirements.
   </Card>
   <Card title="Track Order Numbers" icon="hashtag">
-    SubBase assigns sequential order numbers—reference these in vendor communications.
+    SubBase assigns sequential order numbers to orders you create here—reference these in vendor communications. If **Create orders from vendor emails** is on, an order created from a vendor email keeps the vendor's own number.
   </Card>
   <Card title="Attach Documents" icon="paperclip">
     Upload specs, drawings, or terms and conditions as needed.
